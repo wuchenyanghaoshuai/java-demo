@@ -1,4 +1,6 @@
-FROM lizhenliang/tomcat 
-LABEL maintainer www.ctnrs.com
-RUN rm -rf /usr/local/tomcat/webapps/*
-ADD target/*.war /usr/local/tomcat/webapps/ROOT.war 
+FROM 192.168.100.36:1179/kkb/jre-sky-agent:alpine_v1
+ADD run.sh /
+RUN chmod +x /run.sh
+RUN sed -i 's/dl-cdn\.alpinelinux\.org/mirrors\.aliyun\.com/g' /etc/apk/repositories
+COPY app.jar /
+CMD ["/run.sh"]
