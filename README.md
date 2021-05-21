@@ -3,3 +3,4 @@
 > ### 源代码地址为https://github.com/lizhenliang/tomcat-java-demo
 > ### 该作者的打包方式为war包,这里做了下修改为jar包
 > ### mvn clean -U package  -am -Dmaven.test.skip
+> ### release/v0.0.1 分支是修改好的分支,只需要修改一下mysql的地址,重新构建编译打包一下即可
