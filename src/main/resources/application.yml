@@ -18,3 +18,15 @@ spring:
     suffix: .ftl
     template-loader-path:
       - classpath:/templates/
+
+
+management:
+  server:
+    port: 8081
+  endpoints:
+    shutdown:
+      enabled: true
+    web:
+      base-path: /manage
+      exposure:
+        include: '*'
