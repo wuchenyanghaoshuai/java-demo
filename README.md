@@ -6,3 +6,4 @@
 > ### release/v0.0.1 分支是修改好的分支,只需要修改一下mysql的地址,重新构建编译打包一下即可
 > ### app.jar 是mvn编译打包以后修改target目录下的名字为app.jar
 > ### 该版本是加入了java的metrics
+> ### 仅支持java1.8 ，高版本会报错
